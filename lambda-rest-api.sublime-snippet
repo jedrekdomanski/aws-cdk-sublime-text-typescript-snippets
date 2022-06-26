@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+const ${2:api} = new apigateway.LambdaRestApi(this, ${3:'api'}, {
+  defaultCorsPreflightOptions: {
+    allowOrigins: apigw.Cors.ALL_ORIGINS,
+    allowMethods: apigw.Cors.ALL_METHODS
+  },
+  handler: // handler,
+  proxy: false,
+  ${0:// code...}
+});
+]]></content>
+    <tabTrigger>cdk-lambda-rest-api</tabTrigger>
+    <scope>source.ts</scope>
+    <description>Lambda Rest API</description>
+</snippet>

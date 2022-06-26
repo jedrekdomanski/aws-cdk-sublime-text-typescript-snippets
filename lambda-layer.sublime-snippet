@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+const ${2:lambdaLayerName} = new lambda.LayerVersion(this, ${3:'lambdaLayerName'}, {
+  code: lambda.Code.fromAsset('path'),
+  compatibleRuntimes: [lambda.Runtime.PYTHON_3_7],
+  license: 'Apache-2.0',
+  description: 'Description...'
+  ${0:// code...}
+});
+]]></content>
+    <tabTrigger>cdk-lambda-layer</tabTrigger>
+    <scope>source.ts</scope>
+    <description>Lambda Layer …</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+const ${2:bucketName} = new Bucket(this, ${3:'BucketName'}, {
+  removalPolicy: cdk.RemovalPolicy.DESTROY,
+  ${0:// code...}
+});
+]]></content>
+    <tabTrigger>cdk-s3</tabTrigger>
+    <scope>source.ts</scope>
+    <description>S3 Bucket</description>
+</snippet>

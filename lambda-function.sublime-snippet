@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+const ${2:lambdaName} = new lambda.Function(this, ${3:'lambdaName'}, {
+  code: lambda.Code.fromAsset('path'),
+  runtime: // runtime
+  handler: 'index.handler',
+  environment: {
+    env: // env,
+    ...
+  }
+  ${0:// code...}
+});
+]]></content>
+    <tabTrigger>cdk-lambda</tabTrigger>
+    <scope>source.ts</scope>
+    <description>lambda function …</description>
+</snippet>
